@@ -1,5 +1,5 @@
 // Array d'images
-const img = [
+const images = [
     "cartes/1.png",
     "cartes/2.png",
     "cartes/3.png",
@@ -52,7 +52,8 @@ const img = [
     "cartes/50.png",
     "cartes/51.png",
     "cartes/52.png",
-]
+];
+ var index = 0;
 
 // var imgArray = [];
 // for (i = 0; i < 52; i++) {
@@ -74,14 +75,32 @@ let carte = document.getElementById("carte")
 // let row3 = document.getElementsByClassName(".row3");
 
 afficher.addEventListener("click", ()=>{
- 
     
-    for(var i=0; i< img.length; i++){
-        var image = new image();
-        image.src = img[i]
-        carte.innerHTML += image[i].outerHTML;
+    var img = document.createElement('img')
+    for(i=0; i<= images.length; i++){
+        img.src = images[i];
+        carte.appendChild(img).outerHTML;
+    }
 
 })
+
+function makeImage() {
+    var img = document.createElement('img')
+    for(i=0; i<= images.length; i++){
+        img.src = images[i];
+        carte.appendChild(img).outerHTML;
+ }
+}
+
+
+// function functieArray(){
+//     for(i=0; i<= img.length; i++){
+//     // var image = new image();
+//     // image.src = img[i];
+//     carte.appendChild(img[i]);
+//     carte.innerHTML += img[i].outerHTML;
+// }
+// }
  // var imgArray = [];
  // for (i = 1; i < 53; i++) {
 // imgArray[i] = new Image();
