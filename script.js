@@ -58,8 +58,16 @@ const img = [
 
 let afficher = document.getElementById("afficher");
 let brasser = document.getElementById("brasser");
+let carte = document.getElementById("carte")
+// let row = document.getElementsById("row");
+// let row1 = document.getElementsByClassName(".row1");
+// let row2 = document.getElementsByClassName(".row2");
+// let row3 = document.getElementsByClassName(".row3");
 
 afficher.addEventListener("click", ()=>{
+    
+    carte.innerHTML = img[1].src;
+    console.log(carte);
     
 })
 
