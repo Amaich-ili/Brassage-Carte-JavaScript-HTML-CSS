@@ -1,0 +1,12 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.container{
+    width: 80%;
+    height: 60%;
+    padding: auto;
+    margin: auto;
+    background-color: aqua;
+}
