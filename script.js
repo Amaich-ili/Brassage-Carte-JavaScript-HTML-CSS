@@ -1,5 +1,5 @@
 // Array d'images
-const images = [
+ const images = [
     "cartes/1.png",
     "cartes/2.png",
     "cartes/3.png",
@@ -75,12 +75,14 @@ let carte = document.getElementById("carte")
 // let row3 = document.getElementsByClassName(".row3");
 
 afficher.addEventListener("click", ()=>{
-    
-    var img = document.createElement('img')
-    for(i=0; i<= images.length; i++){
-        img.src = images[i];
-        carte.appendChild(img).outerHTML;
+    for(i=0; i< images.length; i++){
+        // console.log(images[i])
+        carte.src += images[i]
+
+
     }
+    // carte.src = images[1]
+
 
 })
 

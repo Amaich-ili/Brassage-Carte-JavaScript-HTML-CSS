@@ -42,4 +42,8 @@ h1{
 }
 .carte{
     padding: 4px;
+   
+}
+#carte{
+    display: flex;
 }
