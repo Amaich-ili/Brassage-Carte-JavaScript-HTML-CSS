@@ -68,19 +68,24 @@
 
 let afficher = document.getElementById("afficher");
 let brasser = document.getElementById("brasser");
-let carte = document.getElementById("carte")
+let carte = document.querySelector(".carte")
 // let row = document.getElementsById("row");
 // let row1 = document.getElementsByClassName(".row1");
 // let row2 = document.getElementsByClassName(".row2");
 // let row3 = document.getElementsByClassName(".row3");
 
 afficher.addEventListener("click", ()=>{
-    for(i=0; i< images.length; i++){
-        // console.log(images[i])
-        carte.src += images[i]
-
-
+    var i=1
+    while(i<10){
+        carte.write("<img src=images[i]")
+        i++
     }
+    // for(i=0; i< images.length; i++){
+    //     // console.log(images[i])
+    //     carte.src += images[i]
+
+
+    
     // carte.src = images[1]
 
 
