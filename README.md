@@ -6,7 +6,7 @@ Un site Web permettant d'afficher l'algorithme de brassage de jeu de cartes.
 
 ## Utilisation
 
-La page affiche les 52 cartes.
+La page affiche 52 cartes.
 En cliquant sur brasser les cartes, l'algorithme va les brasser inter-coupé.
 l'algorithme divise le total des cartes en 2 paquets:
 En fin les cartes vont suivre l'ordre suivant:
