@@ -5,7 +5,7 @@ for (i = 0; i <= 51; i++) {
     images[i]= "cartes/" + val + ".png";
 
 }
-console.log(images)
+
  
 
 function afficher()
