@@ -1,5 +1,41 @@
-// Array d'images
- const images = [
+let NUMBERS = ["A","2","3","4","5","6","7","8","9","10","J","Q","K"]
+let SUITES = ["♦", "♣", "♥", "♠"]
+let list_cartes = []
+let carte = document.querySelector(".carte")
+for (var suit = 0; suit < 4 ; suit++){
+    for (var number = 0; number < 13 ; number++){
+        list_cartes.push(NUMBERS[number] + SUITES[suit]);
+    }
+}
+
+let btn1 = document.querySelector(".creer_cartes");
+btn1.addEventListener("click", function(){
+    for(let i = 0; i < list_cartes.length; i++){
+        const element = '<p>'+list_cartes[i]+'</p>';
+        carte.innerHTML += element;
+    }
+})
+
+let btn2 = document.querySelector(".brasser")
+btn2.addEventListener("click", function(){
+    let half1 = []
+    let half2 = []
+    let new_list = []
+    let result = document.querySelector(".result")
+    half1 = (list_cartes.slice(list_cartes.length/2))
+    half2 = (list_cartes.slice(0,-list_cartes.length/2))
+    for (var i = 0; i <  half1.length; i++) {
+        new_list .push( half1[i]);
+        new_list .push( half2[i]);
+    }
+    for(let i = 0; i < new_list.length; i++){
+        const element = '<p>'+new_list[i]+'</p>';
+        result.innerHTML += element;
+    } 
+})
+
+
+let images = [
     "cartes/1.png",
     "cartes/2.png",
     "cartes/3.png",
@@ -53,84 +89,34 @@
     "cartes/51.png",
     "cartes/52.png",
 ];
- var index = 0;
 
-// var imgArray = [];
-// for (i = 0; i < 52; i++) {
-//     imgArray[i] = new Image();
-//     imgArray[i].src = 'carte/' + i + '.png';
-// }
-
-// function functieArray() {
-//     var images = imgArray.map(img => img.outerHTML).join('');
-//     document.getElementById("pozeGallery").innerHTML = images;
-// }
-
-let afficher = document.getElementById("afficher");
-let brasser = document.getElementById("brasser");
-let carte = document.querySelector(".carte")
-// let row = document.getElementsById("row");
-// let row1 = document.getElementsByClassName(".row1");
-// let row2 = document.getElementsByClassName(".row2");
-// let row3 = document.getElementsByClassName(".row3");
-
-afficher.addEventListener("click", ()=>{
-    var i=1
-    while(i<10){
-        carte.write("<img src=images[i]")
-        i++
-    }
-    // for(i=0; i< images.length; i++){
-    //     // console.log(images[i])
-    //     carte.src += images[i]
-
-
-    
-    // carte.src = images[1]
-
-
+let btn3 = document.querySelector(".creer_cartes_img")
+let carte1 = document.querySelector(".carte1")
+btn3.addEventListener("click", function(){
+    for(let i = 0; i < images.length; i++){
+        const element = '<img src="'+images[i]+'">'
+        carte1.innerHTML += element;
+    } 
 })
 
-function makeImage() {
-    var img = document.createElement('img')
-    for(i=0; i<= images.length; i++){
-        img.src = images[i];
-        carte.appendChild(img).outerHTML;
- }
-}
 
-
-// function functieArray(){
-//     for(i=0; i<= img.length; i++){
-//     // var image = new image();
-//     // image.src = img[i];
-//     carte.appendChild(img[i]);
-//     carte.innerHTML += img[i].outerHTML;
-// }
-// }
- // var imgArray = [];
- // for (i = 1; i < 53; i++) {
-// imgArray[i] = new Image();
-// imgArray[i].src = "carte/" + i + ".png";
-// carte.innerHTML += imgArray[i].outerHTML;
-
-
-// function loadPics(imag){
-//     for(var i=0; i< img.length; i++) {
-//         var Img = new Image();
-//             Img.src = img[i];
-//     }
-//     img.forEach(img => {
-//         carte.appendChild(loadPics(img).outerHTML);
+let btn4 = document.querySelector(".brasser_img")
+btn4.addEventListener("click", function(){
+    let half1 = []
+    let half2 = []
+    let new_list = []
+    let result1 = document.querySelector(".result")
+    half1 = (images.slice(images.length/2))
+    half2 = (images.slice(0,-images.length/2))
+    for (var i = 0; i <  half1.length; i++) {
+        new_list .push( half1[i]);
+        new_list .push( half2[i]);
+    }
+    for(let i = 0; i < new_list.length; i++){
+        const element = '<img src="'+new_list[i]+'">';
+        result1.innerHTML += element;
+    } 
+})
 
 
 
-
-// function functieArray() {
-//     var images = imgArray.map(img => img.outerHTML).join('');
-//     carte.innerHTML = images;
-// }
-
-// brasser.addEventListener("click", ()=>{
-    
-// })
