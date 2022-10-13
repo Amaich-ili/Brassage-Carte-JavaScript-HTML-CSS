@@ -12,6 +12,7 @@ let btn1 = document.querySelector(".creer_cartes");
 btn1.addEventListener("click", function(){
     for(let i = 0; i < list_cartes.length; i++){
         const element = '<p>'+list_cartes[i]+'</p>';
+        carte.innerHTML = "";
         carte.innerHTML += element;
     }
 })
@@ -30,6 +31,7 @@ btn2.addEventListener("click", function(){
     }
     for(let i = 0; i < new_list.length; i++){
         const element = '<p>'+new_list[i]+'</p>';
+        result.innerHTML = "";
         result.innerHTML += element;
     } 
 })
@@ -95,6 +97,7 @@ let carte1 = document.querySelector(".carte1")
 btn3.addEventListener("click", function(){
     for(let i = 0; i < images.length; i++){
         const element = '<img src="'+images[i]+'">'
+        carte1.innerHTML = "";
         carte1.innerHTML += element;
     } 
 })
@@ -114,6 +117,7 @@ btn4.addEventListener("click", function(){
     }
     for(let i = 0; i < new_list.length; i++){
         const element = '<img src="'+new_list[i]+'">';
+        result1.innerHTML = "";
         result1.innerHTML += element;
     } 
 })
