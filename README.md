@@ -1,4 +1,4 @@
-# Site web pour le brassage des cartes de jeu
+# Page web pour le brassage des cartes de jeu
 
 ## Description
 
