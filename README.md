@@ -2,7 +2,7 @@
 
 ## Description
 
-Un site Web permettant d'afficher l'algorithme de brassage de jeu de cartes.
+Une page permettant d'afficher l'algorithme de brassage de jeu de cartes.
 
 ## Utilisation
 
@@ -16,6 +16,4 @@ En fin les cartes vont suivre l'ordre suivant:
 ### Support
 Iliass Amaich iliamaich@gmail.com
 
-### Auteurs et Reconnaissances
-Keven Presseau
  
